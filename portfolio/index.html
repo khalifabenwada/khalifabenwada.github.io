@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Khalifa Ben Wada</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                 <li><a href="#skills">Skills</a></li>
+            </ul>
+    </header>
+    <section id="hero">
+       <img src="image/im.jpg" alt="Hero Image">
+        <div id="hero-text">
+            <h2>Hi i'm khalifa ben wada</h2>
+            <p id="typed-text"></p>
+            <a href="#projects">View My Projects</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name ...">
+                <span class="error" id="name-error"></span>            
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="your email...">
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for ="message">Message:</label>
+                <textarea id="message" placeholder="your Message..."></textarea>
+                <span class="error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+            <p id="success-msg"></p>
+        </form>
+    </section>
+    <section id="skills">
+     <h2>My Skills</h2>
+     <div class="skills-grid">
+
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Backend</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Python</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Database</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Docker</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+         <h3>Design & Media</h3>
+           <ul>
+              <li>UX Design</li>
+              <li>Video Editing</li>
+              <li>Graphic Design</li>
+              <li>Figma</li>
+              <li>Adobe Premiere</li>
+              <li>Photoshop</li>
+          </ul>
+        </div>
+
+       </div>
+     </section>
+     <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <div class="project-icon">🧮</div>
+            <h3>Calculator</h3>
+            <p>A fully functional calculator built with HTML, CSS and JavaScript</p>
+            <span class="project-tag">Coming Soon</span>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">📝</div>
+            <h3>To-Do List</h3>
+            <p>A task management app to add, delete and track your daily tasks</p>
+            <span class="project-tag">Coming Soon</span>
+        </div>
+
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
