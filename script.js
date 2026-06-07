@@ -28,7 +28,7 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         document.getElementById("name-error").textContent = "";
     }
 
-    if (email === "") {
+    if (email === "") { 
         document.getElementById("email-error").textContent = "Email is required";
         valid = false;
     } else if (!email.includes("@")) {
